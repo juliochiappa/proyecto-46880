@@ -1,0 +1,428 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&family=Zilla+Slab:ital@1&display=swap');
+
+
+/* -------Tipografía-------- */
+
+/*  font-family: 'Poppins', sans-serif;
+    font-family: 'Zilla Slab', serif;
+*/
+
+/* --------Paleta de Colores----- */
+
+/*  b69079
+    7A4EA6
+    D5C3E8
+    866D8C
+    D2B9D8
+    ECD9CE     
+*/
+
+/* ---------Propiedades del Header---------- */
+
+    
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #aa91c5;
+    align-items: flex-end;
+    padding: 0px 1.25rem;
+    position: sticky;
+    top: 0rem;
+}
+
+.logo{
+    width: 2.5rem;
+}
+
+.logo img{
+    width: 100%;
+    background-position: center;
+    margin-top: .625rem;
+    border-radius: 40%;
+}
+    
+.logo h1{
+        font-size: .9375rem;
+        padding-bottom: .3125rem;
+}
+
+.nav-bar{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 30px;
+    padding-bottom: 5px;
+}
+
+
+.nav-bar li a{
+    text-align: justify;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.671);
+    font-size: .9375rem;
+}
+    
+
+
+/* --------Propiedades Main del Index----------- */
+
+.conte-grids{
+    display: grid;
+    width: 100%;
+    height: 500px;
+    background-color: antiquewhite;
+    align-content: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "figuras1 figuras2 figuras3 figuras4"
+    "figuras1 figuras2 figuras3 figuras4"
+    ;
+}
+
+
+main h1{
+    background-color: antiquewhite;
+    text-align: center;
+    padding-top: 1.875rem;
+}
+
+.figuras-1{
+    background-color: antiquewhite;
+    grid-area: figuras1;
+}
+
+.figuras-1 img{
+    width: 100%;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+.figuras-1 h2{
+    background-color: #d7c1ecc5;
+    text-align: center;
+    border-radius: .3125rem;
+}
+
+.figuras-2{
+    background-color: antiquewhite;
+    grid-area: figuras2;
+}
+
+.figuras-2 img{
+    width: 100%;
+    border-radius: 5%;
+    object-fit: cover;
+    
+}
+
+.figuras-2 h2{
+    background-color: #d7c1ecc5;
+    text-align: center;
+    border-radius: .3125rem;
+}
+
+.figuras-3{
+    background-color: antiquewhite;
+    grid-area: figuras3;
+}
+
+.figuras-3 img{
+    width: 100%;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+.figuras-3 h2{
+    background-color: #d7c1ecc5;
+    text-align: center;
+    border-radius: .3125rem;
+}
+
+.figuras-4{
+    background-color: antiquewhite;
+    grid-area: figuras4;
+}
+
+.figuras-4 img{
+    width: 100%;
+    border-radius: 5%;
+    object-fit: cover;
+    
+}
+
+.figuras-4 h2{
+    background-color: #d7c1ecc5;
+    text-align: center;
+    border-radius: .3125rem;
+}
+
+.descripcion{
+    text-align: center;
+    background-color: antiquewhite;
+    padding-bottom: 1.875rem;
+    padding-top: .9375rem;
+}
+
+
+/* ---------Propiedades Main de Conocenos------ */
+
+main div h1{
+    background-color: antiquewhite;
+    padding-top: 1.875rem;
+    text-align: left;
+}
+
+.imagen-conoce{
+    display: grid;
+    width: 100%;
+    height: 31.25rem;
+    background-color: antiquewhite;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    padding-top: 1.875rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 22%);
+    grid-template-areas:
+    "centro1 centro2 centro3 centro4"
+    "centro1 centro2 centro3 centro4"
+    "centro5 centro5 centro5 centro5"
+    ;
+}
+
+.centro-1{
+    background-color: antiquewhite;
+    grid-area: centro1;
+}
+
+.centro-1 img{
+    width: 100%;
+    border-radius: 5%;
+}
+
+.centro-2{
+    background-color: antiquewhite;
+    grid-area: centro2;
+}
+
+.centro-2 img{
+    width: 100%;
+    border-radius: 5%;
+}
+
+.centro-3{
+    background-color: antiquewhite;
+    grid-area: centro3;
+}
+
+.centro-3 img{
+    width: 100%;
+    border-radius: 5%;
+}
+
+.centro-4{
+    background-color: antiquewhite;
+    grid-area: centro4;
+}
+
+.centro-4 img{
+    width: 100%;
+    border-radius: 5%;
+}
+
+.descri-conoce{
+    background-color: antiquewhite;
+    padding-bottom: 1.875rem;
+    text-align: center;
+    }
+
+
+
+/* --------Propiedades Main de Videos---------- */
+
+
+.video div h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.25rem
+}
+    
+.video div iframe{
+    height: 15.625rem;
+    width: 15.625rem;
+    margin-left: 3.125rem;
+}
+
+.video div video{
+    height: 15.625rem;
+    width: 15.625rem;
+    margin-left: 3.125rem;
+}
+
+.video div p{
+text-align: center;
+font-family: 'Zilla Slab', serif;
+font-size: 2rem
+
+}
+
+/* --------Propiedades Main de Tratamientos----- */
+
+.titulo-1 div h1{
+    background-color: antiquewhite;
+    text-align: center;
+}
+/* .titulo-1 div h2{
+    background-color: antiquewhite;
+    text-align: center;
+    padding-top: .9375rem;
+} */
+
+.trata-facial{
+    display: grid;
+    width: 100%;
+    height: 43.75rem;
+    background-color: antiquewhite;
+    justify-content: space-evenly;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "trata1 trata2 trata3 trata4"
+    "trata1 trata2 trata3 trata4"
+    ;
+}
+
+.trata-1{
+    background-color: antiquewhite;
+    grid-area: trata1;
+}
+
+.trata-2{
+    background-color: antiquewhite;
+    grid-area: trata2;
+}
+
+.trata-3{
+    background-color: antiquewhite;
+    grid-area: trata3;
+}
+
+.trata-4{
+    background-color: antiquewhite;
+    grid-area: trata4;
+}
+
+.trata-corpo{
+    display: grid;
+    width: 100%;
+    height: 43.75rem;
+    background-color: antiquewhite;
+    justify-content: space-between;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "corpo1 corpo2 corpo3"
+    "corpo1 corpo2 corpo3"
+    ;
+}
+
+.trata-corpo-1{
+    background-color: antiquewhite;
+    grid-area: corpo1;
+}
+
+.trata-corpo-2{
+    background-color: antiquewhite;
+    grid-area: corpo2;
+}
+
+.trata-corpo-3{
+    background-color: antiquewhite;
+    grid-area: corpo3;
+}
+
+
+
+/* --------Propiedades del Footer---------- */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #aa91c5;
+}
+
+.whatsapp{
+    width: 2.5rem;
+    background-position: center;
+    margin-top: 1.25rem;
+}
+
+.whatsapp1{
+    padding-top: 1.875rem;
+}
+
+.whatsapp p{
+    margin-left: 10px;
+    margin-top: .625rem;
+    font-size: 1.125rem;
+}
+
+.whatsapp img{
+    width: 70%;
+    margin-left: 1.875rem;
+    margin-top: .625rem;
+    border-radius: 50%;
+}
+
+.redes{
+    width: 2.5rem;
+    background-position: center;
+    margin-right: 1.25rem;    
+}
+
+.redes1{
+    padding-top: 1.875rem;
+}
+.redes p{
+    margin-top: 10px;
+    padding-top: .625rem;
+    font-size: 1.125rem;
+}
+
+.redes img{
+    width: 70%;
+    margin-left: 10px;
+    border-radius: 50%;
+    padding-top: .3125rem;
+}
+
+.direccion p{
+    font-size: 1.25rem;
+}
+.direccion iframe{
+    margin-top: 10px;
+    margin-left: 1.25rem;
+    border-radius: 5%;
+}
