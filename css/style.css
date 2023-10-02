@@ -4,30 +4,28 @@
     box-sizing: border-box;
 }
 
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&family=Zilla+Slab:ital@1&display=swap');
 
-
-/* -------Tipografía-------- */
+/* ----------------Tipografía------------------ */
 
 /*  font-family: 'Poppins', sans-serif;
     font-family: 'Zilla Slab', serif;
 */
 
-/* --------Paleta de Colores----- */
+/* ---------------Paleta de Colores------------ */
 
-/*  b69079
+/*  aa91c5
+    caa892b2
+    7a4ea67a
+
+    b69079
     7A4EA6
     D5C3E8
-    866D8C
     D2B9D8
-    ECD9CE     
+         
 */
 
 /* ---------Propiedades del Header---------- */
-
-    
-
 header{
     display: flex;
     flex-direction: row;
@@ -38,53 +36,72 @@ header{
     padding: 0px 1.25rem;
     position: sticky;
     top: 0rem;
-}
+} 
 
-.logo{
-    width: 2.5rem;
-}
-
-.logo img{
+.nav-wrapper{
     width: 100%;
-    background-position: center;
-    margin-top: .625rem;
-    border-radius: 40%;
-}
-    
-.logo h1{
-        font-size: .9375rem;
-        padding-bottom: .3125rem;
+    margin: 0 auto;
+    padding: 0rem;
 }
 
-.nav-bar{
+nav{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #aa91c5;
+    padding: 1rem 1.5rem;
+}
+
+nav .logo{
+    font-size: 2.1875rem;
+    font-weight: 700;
+}
+
+nav ul{
     list-style: none;
-    gap: 30px;
-    padding-bottom: 5px;
+    display: flex;
+    gap: 2rem;
 }
 
-
-.nav-bar li a{
-    text-align: justify;
+nav a{
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.671);
-    font-size: .9375rem;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 2.375rem;
+    text-transform: uppercase;
 }
-    
+
+nav img{
+    border-radius: 50%;
+}
+
+/* -----------Pseudoclases-----------*/
+
+.menu li a:hover{
+    color: black;
+    text-decoration: underline;
+    transition: 0.5s;
+} 
+
+nav #toggle, nav label{
+    display: none;
+}
 
 
 /* --------Propiedades Main del Index----------- */
 
-.conte-grids{
+.conte-figuras{
     display: grid;
     width: 100%;
-    height: 500px;
-    background-color: antiquewhite;
+    height: auto;
+    justify-content: space-between;
     align-content: center;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-items: center;
+    padding: .9375rem;
+    gap: 20px;
+    background-color: #caa892b2;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
@@ -93,299 +110,218 @@ header{
     ;
 }
 
-
-main h1{
-    background-color: antiquewhite;
-    text-align: center;
-    padding-top: 1.875rem;
-}
-
 .figuras-1{
-    background-color: antiquewhite;
-    grid-area: figuras1;
+   grid-area: figuras1;
 }
-
-.figuras-1 img{
-    width: 100%;
-    border-radius: 5%;
-    object-fit: cover;
-}
-
-.figuras-1 h2{
-    background-color: #d7c1ecc5;
-    text-align: center;
-    border-radius: .3125rem;
-}
-
 .figuras-2{
-    background-color: antiquewhite;
     grid-area: figuras2;
 }
-
-.figuras-2 img{
-    width: 100%;
-    border-radius: 5%;
-    object-fit: cover;
-    
-}
-
-.figuras-2 h2{
-    background-color: #d7c1ecc5;
-    text-align: center;
-    border-radius: .3125rem;
-}
-
 .figuras-3{
-    background-color: antiquewhite;
     grid-area: figuras3;
 }
-
-.figuras-3 img{
-    width: 100%;
-    border-radius: 5%;
-    object-fit: cover;
-}
-
-.figuras-3 h2{
-    background-color: #d7c1ecc5;
-    text-align: center;
-    border-radius: .3125rem;
-}
-
 .figuras-4{
-    background-color: antiquewhite;
     grid-area: figuras4;
 }
+.figuras-5{
+    grid-area: figuras5;
+}
 
-.figuras-4 img{
+.descri-centro{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #caa892b2;
+    padding-top: 40px;
+    padding-bottom: 2.5rem;
+    text-shadow: 10px 10px 10px rgba(10, 10, 10, 0.61);
+}
+
+.conte-figuras h3{
+    text-align: center;
+}
+
+.figuras{
     width: 100%;
+    background-color: #a183c07a;
     border-radius: 5%;
-    object-fit: cover;
-    
+    overflow: hidden;
+    margin: .3125rem; 
+    box-shadow: .25rem .25rem .625rem rgba(85, 71, 71, 0.74);
 }
 
-.figuras-4 h2{
-    background-color: #d7c1ecc5;
+.comentario{
     text-align: center;
-    border-radius: .3125rem;
+    font-family: 'Zilla Slab', serif;
+    background-color: #caa892b2;
+    padding-bottom: 40px;
+    padding-top: 1.25rem;
 }
 
-.descripcion{
-    text-align: center;
-    background-color: antiquewhite;
-    padding-bottom: 1.875rem;
-    padding-top: .9375rem;
+.figuras img{
+    width: 100%;
+}
+
+/*---------Pseudoclases del Index---------*/
+
+.conte-figuras .figuras:hover{
+    box-shadow: 0px 0px 15px grey;
+    overflow: hidden;
 }
 
 
 /* ---------Propiedades Main de Conocenos------ */
 
-main div h1{
-    background-color: antiquewhite;
-    padding-top: 1.875rem;
-    text-align: left;
-}
-
 .imagen-conoce{
     display: grid;
     width: 100%;
-    height: 31.25rem;
-    background-color: antiquewhite;
-    justify-content: space-evenly;
+    height: auto;
+    justify-content: space-between;
     align-content: center;
-    align-items: center;
-    justify-items: center;
-    padding-top: 1.875rem;
+    background-color: #c7a28cda;
+    padding: .625rem;
+    gap: 20px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 22%);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
     "centro1 centro2 centro3 centro4"
     "centro1 centro2 centro3 centro4"
-    "centro5 centro5 centro5 centro5"
     ;
 }
 
 .centro-1{
-    background-color: antiquewhite;
     grid-area: centro1;
 }
-
-.centro-1 img{
+    
+ .centro-2{
+     grid-area: centro2;
+     
+ }
+ .centro-3{
+     grid-area: centro3;
+     
+ }
+ .centro-4{
+     grid-area: centro4;
+     
+ }
+ 
+.centro{
     width: 100%;
-    border-radius: 5%;
-}
-
-.centro-2{
-    background-color: antiquewhite;
-    grid-area: centro2;
-}
-
-.centro-2 img{
-    width: 100%;
-    border-radius: 5%;
-}
-
-.centro-3{
-    background-color: antiquewhite;
-    grid-area: centro3;
-}
-
-.centro-3 img{
-    width: 100%;
-    border-radius: 5%;
-}
-
-.centro-4{
-    background-color: antiquewhite;
-    grid-area: centro4;
-}
-
-.centro-4 img{
-    width: 100%;
-    border-radius: 5%;
+    background-position: center;
+    border-radius: 10%;
+    overflow: hidden;
+    margin: .3125rem; 
 }
 
 .descri-conoce{
-    background-color: antiquewhite;
-    padding-bottom: 1.875rem;
     text-align: center;
-    }
+    background-color: #c7a28cda;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
 
+.direccion iframe{
+    width: 100%;
+    height: 12.5rem;
+    background-color: #c7a28cda;
+    padding-top: 1.875rem;
+}    
+
+.direccion h3{
+    background-color: #c7a28cda;
+    padding-top: 1.5625rem;
+    text-align: center;
+}
+
+
+/*---------Pseudoclases de Conocenos---------*/
+
+.imagen-conoce .centro:hover{
+    box-shadow: 0px 0px 15px grey;
+    overflow: hidden;
+}
+
+
+/* --------Propiedades Tratamientos----- */
+                /* Bootstrap */
+
+.bg-lila{
+    background-color: #aa91c5;
+}
+
+.bg-antiquewhite{
+    background-color: antiquewhite;
+}
 
 
 /* --------Propiedades Main de Videos---------- */
 
-
-.video div h1{
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.25rem
-}
-    
-.video div iframe{
-    height: 15.625rem;
-    width: 15.625rem;
-    margin-left: 3.125rem;
-}
-
-.video div video{
-    height: 15.625rem;
-    width: 15.625rem;
-    margin-left: 3.125rem;
-}
-
-.video div p{
-text-align: center;
-font-family: 'Zilla Slab', serif;
-font-size: 2rem
-
-}
-
-/* --------Propiedades Main de Tratamientos----- */
-
-.titulo-1 div h1{
-    background-color: antiquewhite;
-    text-align: center;
-}
-.titulo-1 div h2{
-    background-color: antiquewhite;
-    text-align: center;
-    padding-top: 1.875rem;
-}
-
-.trata-facial{
-    display: grid;
+.contenedor-video{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
-    height: 31.25rem;
-    background-color: antiquewhite;
-    justify-content: space-evenly;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    /* grid-template-rows: repeat(2, 1fr); */
-    grid-template-areas:
-    "trata1 trata2 trata3 trata4"
-    /* "trata1 trata2 trata3 trata4" */
-    ;
-}
-
-.trata-1{
-    background-color: antiquewhite;
-    grid-area: trata1;
-}
-
-.trata-1 img{
-    height: 100%;
-    background-color: antiquewhite;
-    border-radius: 5%;
-}
-
-.trata-2{
-    background-color: antiquewhite;
-    grid-area: trata2;
-}
-
-.trata-2 img{
-    height: 100%;
-    background-color: antiquewhite;
-    border-radius: 5%;
-}
-
-.trata-3{
-    background-color: antiquewhite;
-    grid-area: trata3;
-}
-
-.trata-3 img{
-    height: 100%;
-    background-color: antiquewhite;
-    border-radius: 5%;
-}
-
-.trata-4{
-    background-color: antiquewhite;
-    grid-area: trata4;
-}
-
-.trata-4 img{
-    height: 100%;
-    background-color: antiquewhite;
-    border-radius: 5%;
-}
-
-.trata-corpo{
-    display: grid;
-    width: 100%;
-    height: 43.75rem;
-    background-color: antiquewhite;
+    height: auto;
     justify-content: space-between;
     align-content: center;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-    "corpo1 corpo2 corpo3"
-    "corpo1 corpo2 corpo3"
-    ;
+    background-color: #c7a28cda;
+    padding: .625rem;
+    gap: 20px;
+    
 }
 
-.trata-corpo-1{
+.descri-video{
+    text-align: center;
+    background-color: #c7a28cda;
+    padding-top: 1.875rem;
+    padding-bottom: 1.25rem;
+    text-shadow: 10px 10px 10px rgba(10, 10, 10, 0.61);
+}
+
+.explica{
+    text-align: center;
+    background-color: #c7a28cda;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+/* --------Propiedades de Contacto---------- */
+
+/* --------Propiedades del Footer---------- */
+
+.contenedor-formu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 25rem;
+    justify-content: center;
+    align-content: center;
     background-color: antiquewhite;
-    grid-area: corpo1;
+    padding: .625rem;
+    gap: 20px;
+}
+.formulario{
+    width: 100%;
+    height: auto;
 }
 
-.trata-corpo-2{
-    background-color: antiquewhite;
-    grid-area: corpo2;
+.campos-1{
+    height: 6.25rem;
 }
-
-.trata-corpo-3{
-    background-color: antiquewhite;
-    grid-area: corpo3;
+.campos-2{
+    height: 6.25rem;
 }
+.legend-1{
+    padding-bottom: 1.5625rem;
+}
+.legend-2{
+    padding-bottom: 1.5625rem;
+}
+input{
+    margin-top: .625rem;
+    margin-bottom: 1.875rem;
 
+}
 
 
 /* --------Propiedades del Footer---------- */
@@ -393,60 +329,413 @@ font-size: 2rem
 footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 6.25rem; 
+    justify-content: space-between;
+    align-items: center;
     background-color: #aa91c5;
-}
-
-.whatsapp{
-    width: 2.5rem;
-    background-position: center;
-    margin-top: 1.25rem;
-}
-
-.whatsapp1{
-    padding-top: 1.875rem;
-}
-
-.whatsapp p{
-    margin-left: 10px;
-    margin-top: .625rem;
-    font-size: 1.125rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 }
 
 .whatsapp img{
     width: 70%;
-    margin-left: 1.875rem;
-    margin-top: .625rem;
     border-radius: 50%;
 }
 
-.redes{
-    width: 2.5rem;
-    background-position: center;
-    margin-right: 1.25rem;    
-}
-
-.redes1{
-    padding-top: 1.875rem;
-}
-.redes p{
-    margin-top: 10px;
-    padding-top: .625rem;
-    font-size: 1.125rem;
-}
-
-.redes img{
+.insta img{
     width: 70%;
-    margin-left: 10px;
     border-radius: 50%;
-    padding-top: .3125rem;
 }
 
-.direccion p{
-    font-size: 1.25rem;
+.face img{
+    width: 70%;
+    border-radius: 50%;
 }
-.direccion iframe{
-    margin-top: 10px;
-    margin-left: 1.25rem;
-    border-radius: 5%;
+
+.youtube img{
+    width: 70%;
+    border-radius: 50%;
+}
+
+
+
+/* -----------Media Queries----------*/
+
+@media (max-width: 1024px){
+    .conte-figuras{
+        padding: .625rem;
+    }
+}
+
+
+@media (max-width: 768px){
+      
+    /*--------Header-------*/
+    
+    nav a{
+        font-size: .9375rem;
+    }
+
+    nav .logo{
+        font-size: 1.875rem;
+    }
+
+     nav .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: .625rem;
+    }
+
+    nav label{
+        display: flex;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav #toggle:checked ~ .menu{
+        height: 100%;
+    }
+
+    nav img{
+        border-radius: 50%;
+    }
+
+
+    /*-------Main Index--------*/
+
+    .conte-figuras{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "figuras1 figuras2"
+        "figuras1 figuras2"
+        "figuras3 figuras4"
+        "figuras3 figuras4"
+        ;
+    }
+    
+    .descri-centro{
+        font-size: .9375rem;
+    }
+    
+    .conte-figuras h3{
+        text-align: center;
+        font-size: .75rem;
+    }
+    
+    .figuras{
+        width: 70%;
+        margin-left: 3.125rem;
+    }
+    
+    .comentario{
+        font-size: .875rem;
+    }
+    
+    
+    /* -------Main de Conocenos------ */
+
+.imagen-conoce{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "centro1 centro2"
+    "centro1 centro2"
+    "centro3 centro4"
+    "centro3 centro4"
+    ;
+}
+
+.centro{
+    width: 60%;
+    margin-left: 4.375rem;
+     
+}
+
+.descri-conoce{
+   font-size: .75rem;
+}
+
+.direccion h3{
+    font-size: .9375rem;
+}
+
+
+    /* --------Footer---------- */
+
+.whatsapp img{
+    width: 50%;
+}
+
+.insta img{
+    width: 50%;
+}
+
+.face img{
+    width: 50%;
+}
+
+.youtube img{
+    width: 50%;
+}
+
+.contacto{
+    font-size: .75rem;
+}
+
+.seguinos{
+    font-size: .75rem;
+}
+}
+
+
+
+@media (max-width: 425px){
+    
+    /*--------Header-------*/
+
+    nav .logo{
+        font-size: 1.375rem;
+    }
+
+    nav ul{
+        padding: 0px 0px;
+        gap: .3125rem;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    nav a{
+        font-size: .75rem;
+    }
+
+    /*-------Main Index--------*/
+
+    .conte-figuras{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "figuras1"
+        "figuras2"
+        "figuras3"
+        "figuras4"
+        ;
+    }
+     
+    .descri-centro{
+        font-size: .75rem;
+    }
+    
+    .conte-figuras h3{
+        display: none;
+    }
+    
+    .figuras{
+        width: 45%;
+        margin-left: 6.25rem;
+    }
+    
+    .comentario{
+        font-size: .75rem;
+    }
+
+    /* -------Main de Conocenos------ */
+
+.imagen-conoce{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "centro1"
+    "centro2"
+    "centro3"
+    "centro4"
+    ;
+}
+
+.centro{
+    width: 40%;
+    margin-left: 7.1875rem;
+     
+}
+
+.descri-conoce{
+   font-size: .625rem;
+}
+
+.direccion h3{
+    font-size: .75rem;
+}
+
+    /* --------Footer---------- */
+
+    .whatsapp img{
+        width: 40%;
+    }
+    
+    .insta img{
+        width: 40%;
+    }
+    
+    .face img{
+        width: 40%;
+    }
+    
+    .youtube img{
+        width: 40%;
+    }
+    
+    .contacto{
+        display: none;
+    }
+    
+    .seguinos{
+        display: none;
+    }
+}
+
+
+@media (max-width: 375px){
+        
+    /*--------Header-------*/
+
+    nav .logo{
+        font-size: 1.125rem;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    nav a{
+        font-size: .625rem;
+    }
+
+    /*-------Main Index--------*/
+    
+    .descri-centro{
+        font-size: .5625rem;
+    }
+    
+    .conte-figuras h3{
+        display: none;
+    }
+    
+    .figuras{
+        width: 40%;
+        margin-left: 6.25rem;
+    }
+    
+    .comentario{
+        font-size: .625rem;
+    }
+
+    /* -------Main de Conocenos------ */
+
+    .centro{
+        width: 35%;
+        margin-left: 6.875rem;
+    }
+
+    .descri-conoce{
+        display: none;
+    }
+
+    .direccion h3{
+        font-size: .625rem;
+    }
+
+    .direccion iframe{
+        height: 7.5rem;
+    }
+}
+
+@media (max-width: 320px){
+
+    /*--------Header-------*/
+
+    nav .logo{
+        font-size: .9375rem;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    nav a{
+        font-size: .5rem;
+    }
+
+    /*-------Main Index--------*/
+
+    .descri-centro{
+        font-size: .4375rem;
+    }
+    
+    .conte-figuras h3{
+        display: none;
+    }
+    
+    .figuras{
+        width: 35%;
+        margin-left: 5.625rem;
+    }
+    
+    .comentario{
+        font-size: .5rem;
+    }
+
+    /* -------Main de Conocenos------ */
+
+    .centro{
+        width: 30%;
+        margin-left: 6.25rem;
+    }
+
+    .descri-conoce{
+    display: none;
+    }
+
+    .direccion h3{
+        font-size: .625rem;
+    }
+
+    .direccion iframe{
+        height: 6.25rem;
+    }
+
+    /* --------Footer---------- */
+    
+    .whatsapp img{
+        width: 35%;
+    }
+    
+    .insta img{
+        width: 35%;
+    }
+    
+    .face img{
+        width: 35%;
+    }
+    
+    .youtube img{
+        width: 35%;
+    }
+    
+    .contacto{
+        display: none;
+    }
+    
+    .seguinos{
+        display: none;
+    }
 }

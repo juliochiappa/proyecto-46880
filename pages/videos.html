@@ -4,57 +4,74 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Videos</title>
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-
-
         <header>
-            <div class="logo">
-                <img src="../assets/img/Logo.jpeg" alt="Logo Centro">
-                <h1>CIEC</h1>
-            </div>
-            <nav>
-                <ul class="nav-bar">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./conocenos.html">Conocenos</a></li>
-                    <li><a href="./tratamientos.html">Tratamientos</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-
-
-        <main>
-                    <section class="video">
-                        <div>
-                            <h1>Mirá algunos de nuestros Tratamientos Faciales y Corporales</h1>
-                            <iframe width="315" height="315" src="https://www.youtube.com/embed/iGuHxp9N_rQ?si=Co3Nb05tri172xfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            <video width="315" height="315" src="../assets/video/Masajes Descontracturantes.mp4" controls></video>
-                            <iframe width="315" height="315" src="https://www.youtube.com/embed/8IIBI5fbDzI?si=Phxoo9gKws_K1Y9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            <video width="315" height="315" src="../assets/video/Masaje Facial.mp4" controls></video>
-                            <p>Estos videos muestran el tipo de tratamiento que realizan en CIEC profesionales
-                               médicos y cosmiatras de primer nivel</p>
+            <div class="nav-wrapper">
+                <div class="nav-wrapper">
+                    <nav>
+                        <img src="../assets/img/Logo.jpeg" alt="Imágen Logo"></a>
+                        <a class="logo" href="">C.I.E.C.</a>
+                        <input type="checkbox" name="" id="toggle">
+                        <label for="toggle"><i class="material-icons">menu</i></label>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="../index.html">Inicio</a></li>
+                                <li><a href="./conocenos.html">Conocenos</a></li>
+                                <li><a href="./tratamientos.html">Tratamientos</a></li>
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="./contacto.html">Contacto</a></li>
+                            </ul>
                         </div>
-                    </section>       
-                
+                    </nav>
+                </div>
+        </header>
+        <main>
+            <div class="descri-video">
+                <h1>Mirá algunos de nuestros Tratamientos Faciales y Corporales</h1>
+            </div>    
+            <section class="contenedor-video">
+                <div class="video-1 videos">
+                    <video width="300" height="400" src="../assets/video/Masajes Descontracturantes.mp4" controls></video>
+                </div>
+                <div class="video-2 videos">
+                    <video width="300" height="400" src="../assets/video/Masaje Facial.mp4" controls></video>
+                </div>
+                <div class="video-3 videos">
+                    <video width="300" height="400" src="../assets/video/masajes-aparatos.mp4"controls></video>
+                </div>
+                <div class="video-4 videos">
+                    <video width="300" height="400" src="../assets/video/masajes-piedras.mp4" controls></video>
+                </div> 
+            </section>
+            <div class="explica">    
+                <h2>Videos explicativos de los distintos tratamientos que en nuestro Centro realizan los profesionales médicos y cosmiatras con aparatología de última generación</h2>
+            </div>       
         </main>
-
-
         <footer>
-            <div class="whatsapp">
-                <p>Whatsapp</p>
-                <img src="../assets/img/Iconos/whatsapp.png" alt="Whatsapp">
-                <p>351223344</p>
+            <div class="contacto">
+                <h2>Contactanos</h2>
             </div>
-
-            <div class="redes">
-                <p>Redes Sociales</p>
+            <div class="whatsapp">
+                <img src="../assets/img/Iconos/whatsapp.png" alt="Whatsapp">
+            </div>
+            <div class="seguinos">
+                <h2>Seguinos en</h2>
+            </div>
+            <div class="insta">
                 <img src="../assets/img/Iconos/instagram.png" alt="Instagram">
+            </div>
+            <div class="face">
                 <img src="../assets/img/Iconos/facebook.png" alt="Facebook">
             </div>
+            <div class="youtube">
+                <img src="../assets/img/Iconos/youtube.png" alt="Youtube">
+            </div>
         </footer>
-
     </body>
 </html>

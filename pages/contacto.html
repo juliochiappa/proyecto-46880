@@ -4,68 +4,85 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contacto</title>
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
 
 
         <header>
-            <div class="logo">
-                <img src="../assets/img/Logo.jpeg" alt="Logo Centro">
-                <h1>CIEC</h1>
-            </div>
-            <nav>
-                <ul class="nav-bar">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./conocenos.html">Conocenos</a></li>
-                    <li><a href="./tratamientos.html">Tratamientos</a></li>
-                    <li><a href="./videos.html">Videos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
+            <div class="nav-wrapper">
+                <div class="nav-wrapper">
+                    <nav>
+                        <img src="../assets/img/Logo.jpeg" alt="Imágen Logo"></a>
+                        <a class="logo" href="">C.I.E.C.</a>
+                        <input type="checkbox" name="" id="toggle">
+                        <label for="toggle"><i class="material-icons">menu</i></label>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="../index.html">Inicio</a></li>
+                                <li><a href="./conocenos.html">Conocenos</a></li>
+                                <li><a href="./tratamientos.html">Tratamientos</a></li>
+                                <li><a href="./videos.html">Videos</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
         </header>
-
-
-        <main>
-            <form action="">
-                <fieldset>
-                    <legend>Datos Personales</legend>
-                        <label for="nombre">Nombre y Apellido:</label>
-                        <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
-                        <label for="Correo">Correo Electrónico:</label>
-                        <input type="email" id="Correo" placeholder="Ingrese su email" required>
-                        <label for="celular">Celular:</label>
-                        <input type="tel" id="celular" placeholder="Ingrese su celular" required>
-                </fieldset>
-                        <input type="submit">
-                <fieldset>
-                        <legend>Ingrese el tratamiento a realizarce</legend>
-                        <label for="nombre">Tratamiento Solicitado:</label>
-                        <input type="text" id="nombre" placeholder="Ingrese Tratamiento" required>
-                        <label for= "fecha">Fecha Solicitada:</label>
-                        <input type="date" id="fecha" placeholder="Ingrese fecha turno" required>
-                        <label for="hora">Hora del Turno:</label>
-                        <input type="datetime" id="hora" placeholder="Ingrese la hora" required>
-                </fieldset>
-                        <input type="submit">
-            </form>
+        <main class="contenedor-formu">
+            <div class="formulario">
+                <form action="">
+                    <fieldset class="campos-1">
+                        <legend class="legend-1">Datos Personales</legend>
+                            <label for="nombre">Nombre y Apellido:</label>
+                            <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+                            <label for="Correo">Correo Electrónico:</label>
+                            <input type="email" id="Correo" placeholder="Ingrese su email" required>
+                            <label for="celular">Celular:</label>
+                            <input type="tel" id="celular" placeholder="Ingrese su celular" required>
+                    </fieldset>
+                            <input type="submit">
+                    <fieldset class="campos-2">
+                            <legend class="legend-2">Ingrese el tratamiento a realizarce</legend>
+                            <label for="nombre">Tratamiento Solicitado:</label>
+                            <input type="text" id="nombre" placeholder="Ingrese Tratamiento" required>
+                            <label for= "fecha">Fecha Solicitada:</label>
+                            <input type="date" id="fecha" placeholder="Ingrese fecha turno" required>
+                            <label for="hora">Hora del Turno:</label>
+                            <input type="datetime" id="hora" placeholder="Ingrese la hora" required>
+                    </fieldset>
+                            <input type="submit">
+                </form>
+            </div>
         </main>
-
-
         <footer>
+            <div class="contacto">
+                <h2>Contactanos</h2>
+            </div>
+            
             <div class="whatsapp">
-                <p>Whatsapp</p>
                 <img src="../assets/img/Iconos/whatsapp.png" alt="Whatsapp">
-                <p>351223344</p>
             </div>
 
-            <div class="redes">
-                <p>Redes Sociales</p>
+            <div class="seguinos">
+                <h2>Seguinos en</h2>
+            </div>
+
+            <div class="insta">
                 <img src="../assets/img/Iconos/instagram.png" alt="Instagram">
+            </div>
+
+            <div class="face">
                 <img src="../assets/img/Iconos/facebook.png" alt="Facebook">
             </div>
+
+            <div class="youtube">
+                <img src="../assets/img/Iconos/youtube.png" alt="Youtube">
+            </div>
         </footer>
-
-
     </body>
 </html>
