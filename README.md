@@ -1,0 +1,25 @@
+# PROYECTO ACTUAL- COMISION 46880
+
+> SEGUNDA ENTREGA
+
+## PROFESOR
+- Maxi CARDENAS
+
+## TUTORES
+- Eduardo AREVALO 
+- Alesio ADROVER
+- Johana BAIROS
+
+### HERRAMIENTAS UTILIZADAS
+-  HTML
+- CSS
+
+### MAQUETACION
+- Flexbox
+- Grids
+
+### LIBRERIAS Y FRAMEWORKS
+- Bootstrap
+
+### DISEÑO RESPONSIVE
+- Media queries
